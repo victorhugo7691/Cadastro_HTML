@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="POST" action="#">
+        <h1>Formulário Teste</h1>
+        <fieldset>
+            <legend>Cadastro de Pessoas</legend>
+            <label for="NomeId">Nome:</label>
+            <input type="text" name="Nome" id="NomeId" placeholder="Antônio Amaral Junior"><br>
+            Email: <input type="email" name="Email" id="EmailId" placeholder="email@mail.com"><br>
+            Data de Nascimento: <input type="date" name="DataN"><br>
+            Identificador: <input type="number" name="Ident" id="IdentId" placeholder="XXXX" disabled max="4" maxlength="4" value="0001"><br>
+            CPF: <input type="text" name="CPF" id="cpfId" maxlenght="14" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" required> </br>
+            Senha: <input type="password" name="senha" id="senha" required> </br>
+            Mensagem: <textarea name="Mensagem">A vida é colorida!</textarea> <br>
+        <section>Sexo:<br>
+            <input type="radio" name="Sexo" id="SM"> Masculino <br>
+            <input type="radio" name="Sexo" id="SF"> Feminino <br>
+        </section>
+    </fieldset>
+    <fieldset>
+        <legend>Curso de interesse</legend>
+            Escolha os cursos:<br>
+            <input type="checkbox" name="html" id="htmlId" value="1" checked>
+            HTML<br>
+            <input type="checkbox" name="CSS" id="cssId" value="1">
+            CSS<br>
+            <input type="checkbox" name="JavaScript" id="JSId" value="1">
+            JavaScript<br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Sistema Operacional</legend>
+        Escolha o sistema favorito:<br>
+        <input type="radio" name="SO" checked>Windows<br>
+        <input type="radio" name="SO">Linux<br>
+    </fieldset>
+    <fieldset>
+        <legend>Estado</legend>
+        Informe o seu estado<br>
+        <select name="estado">
+            <option value="go">Goiás</option>
+            <option value="sp">São Paulo</option>
+            <option value="rs">Rio Grande do Sul</option>
+        </select>
+    </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
